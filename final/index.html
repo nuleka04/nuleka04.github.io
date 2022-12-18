@@ -4,10 +4,138 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Marvel</title>
 </head>
-<body>
-    <h1>hello</h1>
-    <h2>world</h2>
+<body onload="load()">
+    <div class="main">
+        <!-- Main Page -->
+        <div class="header">
+            <div class="navbar">
+                <img id = "logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/2560px-Marvel_Logo.svg.png" alt="" style="Width:100px">
+            <ul>
+                <li><a href="#movies" >Movies</a></li>
+                <li><a href="#soundtracks">Soundtracks</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#characters">Characters</a></li>
+                <li><a href="#merch">Merch</a></li>
+            </ul>
+            <div class="mainph">
+                <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/avengersendgame_lob_mas_dsk_01.jpg" alt ="">
+                <div class="search">
+                    <input type="search" placeholder="Search..." class = "input" onmouseout="this.value = ''; this.blur();">
+                    <img src="search.png" alt="">
+                </div>
+
+                <div class="text">
+                    <h1>Welcome ● <br> The biggest fan base <br>
+                        in the world <br></h1>
+                        <i id = "i1">be part of a great story</i>
+                        <i id = "i2">be part of a great story</i>
+                        </div>
+            </div>
+            </div>
+        </div>
+        
+        <!-- News Block -->
+        <div class="news">
+            <div class="navbar2">
+                <ul class = "ul1">
+                    <li><a class = "links" href="#news" class="active">Latest News</a></li>
+                    <li><a class = "links" href="#films">Latest Films</a></li>
+                </ul>
+                <ul class = "ul2">
+                    <li><img src="facebook.png" alt=""></li>
+                    <li><img src="instagram.png" alt=""></li>
+                    <li><img src="twitter.png" alt=""></li>
+                </ul>
+            </div>
+
+            <div class="latest-news" id="news">
+                <div class="text-news">
+                    <p>Latest news</p>
+                </div>
+            </div>
+
+            <div class="main-box"> 
+                <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/gotg_0.png" alt="">
+                <a href="https://www.marvel.com/articles/tv-shows/guardians-of-the-galaxy-holiday-special-soundtrack" class="btn">Unwrap the Soundtrack in <br> ‘The Guardians  of the Galaxy <br> Holiday Special’</a>
+            </div>
+
+            <div class="box-container">
+                <div class="box1">
+                    <img src="https://static-koimoi.akamaized.net/wp-content/new-galleries/2022/11/black-panther-wakanda-forever-movie-review-002.jpg" alt="">
+                    <a href="https://www.koimoi.com/reviews/hollywood-movie-reviews/black-panther-wakanda-forever-movie-review-poignant-tribute-to-a-king-sisterhood-reigns-this-is-the-mcu-we-missed-cinema-we-deserve/" class="btn">Black Panther: Wakanda Forever</a>
+                    <p>how to continue the story of Black Panther <br> without the main character?</p>
+                </div>
+        
+                <div class="box2">
+                    <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/guardians_3.jpg" alt="">
+                    <a href="https://www.marvel.com/articles/movies/guardians-of-the-galaxy-vol-3-trailer-ccxp22" class="btn">Guardians of the Galaxy Vol. 3</a>
+                    <p>Today at Comic-Con Experience 2022 in São Paulo, <br> Brazil, Marvel Studios debuted the trailer </p>
+                </div>
+        
+                <div class="box3">
+                    <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/kevin_1_0.png" alt="">
+                    <a href="https://www.marvel.com/articles/tv-shows/kevin-bacon-guardians-of-the-galaxy-holiday-special" class="btn">Introducing the Greatest Marvel Hero</a>
+                    <p>Stories have long been told about him and his heroic deeds, and now for the first time ever we’re finally meeting this revered champion</p>
+                </div>
+                <hr>
+            </div>
+            <!-- Billboard starts -->
+            <div class = "billboard">
+                <img src="wakanda.png" alt="" style="width:100%; height: 500px; object-fit:cover; margin-top:50px;">
+            </div>
+                <!-- <a class="play" onclick="toggle();"><img src="play.png"> Watch Trailer </a> -->
+
+
+                <div class = "trailer">
+                    <video src="trailer.mp4" controls="true" autoplay = "true"></video>
+                    <img src="close.png" onclick="toggleVideo();" class="close" alt="" onclick="toggleVideo();">
+                </div>
+            <!-- Billboard ends -->
+
+            <!-- Recent Movies -->
+            <div class="latest-news" id="films">
+                <div class="text-news">
+                    <p>Latest Films</p>
+                </div>
+            </div>
+
+            <div class="main-box"> 
+                <img src="https://terrigen-cdn-dev.marvel.com/content/prod/2x/pcl3060_mp01_v001_wr_g_r709._1050_089626.jpg" alt="">
+                <a href="https://www.marvel.com/articles/movies/ant-man-and-the-wasp-quantumania-first-trailer-poster" class="btn">'Ant-Man and The Wasp: <br> Quantumania': First Trailer Debuts</a>
+            </div>
+            <div class="box-container">
+                <div class="box1">
+                    <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/ev-content-thumb293.png" alt="">
+                    <a href="https://www.marvel.com/articles/movies/spider-man-no-way-home-extended-edition-digital" class="btn">‘Spider-Man: No Way Home’  <br> Extended Edition Swings onto Digital</a>
+                    <p>Do you want more Spider-Man? Well, <br> you know what they say, three is the magic number</p>
+                </div>
+        
+                <div class="box2">
+                    <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/armorwars.jpg" alt="">
+                    <a href="https://www.marvel.com/articles/comics/sins-of-sinister-trailer-marvel-universe-future-mister-sinister" class="btn">‘Armor Wars’ Moves to Theatrical <br> Release for Marvel Studios</a>
+                    <p>Don Cheadle is still suiting up, but now he’s going to do it on the big screen. 
+                    </p>
+                </div>
+        
+                <div class="box3">
+                    <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/dp3_card1_0.jpg" alt="">
+                    <a href="https://www.marvel.com/articles/movies/ryan-reynolds-hugh-jackman-deadpool-3" class="btn"> <br> Ryan Reynolds and Hugh Jackman <br> Team Up For 'Deadpool 3'</a>
+                    <p>For starters, Ryan Reynolds <br> the rest of the cast and  crew of Marvel Studios'</p>
+                </div>
+                <hr>
+            </div>
+
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+    <script src="path/to/vanilla.js"></script>
 </body>
 </html>
