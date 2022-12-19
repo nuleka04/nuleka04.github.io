@@ -1,0 +1,219 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #151515;
+}
+.navbar #logo{
+    margin-left: 25px;
+    position: absolute;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    line-height: 52px;
+    color: #ff1717;
+    transition: 0.3s;
+}
+.navbar #logo:hover{
+    width: 120px;
+    border-color: #ff1717;
+    box-shadow: 0 0 20px #ff4040;
+}
+.navbar ul{
+    margin-left: 120px;
+    margin-top: 10px;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 50px;
+    padding: 15px;
+    position: relative;
+    margin-left: 40px;
+    font-size: 17px;
+    
+}
+.navbar ul li a{
+    color:white;
+    position: relative;
+}
+.navbar ul li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    margin-bottom: -5px;
+    background-color: white;
+    bottom: 0;
+    left: 15;
+    transform-origin: right;
+    transition: transform .2s ease-in-out;
+    transform: scaleX(0);
+    
+  }
+  .navbar ul li a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+  .mainph{
+    margin-top: -60px;
+  }
+  .search{
+    margin-top: -595px;
+    margin-left: 1200px;
+  }
+  .search{
+    position: relative;
+}
+
+.input {
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: black;
+    outline: none;
+    transition: .5s;
+}
+.search:hover input{
+    width: 250px;
+    background: white;
+    border-radius: 10px;
+}
+.search img{
+    position: absolute;
+    width: 15px;
+    top: 50%;
+    right: 290px;
+    transform: translate(-50%,-50%);
+    font-size: 26px;
+    color: white;
+    transition: .2s;
+}
+.search:hover img{
+    opacity: 0;
+    z-index: -1;
+}
+.text{
+    margin-top: 150px;
+}
+.text p, h1{
+    color:white;
+    margin-left: 150px;
+    margin-top: 50px;
+    font-weight: 400;
+    font-family: 'Anton', sans-serif;
+}
+
+.text h1{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+.text #i1{
+    font-size:30px;
+    margin-left: 150px;
+    color:rgb(213, 19, 19);
+    font-family: 'Puritan', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.container{
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height:100%;
+}
+.container .card{
+    position: relative;
+    width: 500px;
+    height:300px;
+    margin:20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #000000;
+    background: rgba(104, 104, 104, 0.47);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.8px);
+    -webkit-backdrop-filter: blur(8.8px);
+    border: 1px solid rgba(107, 107, 107, 0.47);
+    background: rgba(45, 45, 45, 0.47);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.8px);
+    -webkit-backdrop-filter: blur(8.8px);
+    border: 1px solid rgba(63, 63, 63, 0.47);
+
+}
+.container .card:hover{
+    box-shadow:  0 0 7px rgb(175, 26, 26),
+    0 0 50px rgb(199, 26, 26),
+    0 0 71px rgb(199, 26, 26);
+}
+.container .card img{
+    position:absolute;
+    bottom:0;
+    height:270px;
+    left:50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+.container .card:hover img{
+    left:80%;
+    height:320px;
+}
+.container .card .content{
+    position: relative;
+    font-size: 15px;
+    width:60%;
+    left:20%;
+    padding:20px 20px 20px 40px;
+    transition:0.5s;
+    opacity: 0;
+}
+.container .card .content:hover{
+    left:0%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.container .card .content h2{
+    color:#c11818;
+    text-transform: uppercase;
+    font-size: 35px;
+    line-height: 1em;
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+}
+.container .card .content p{
+    color:white;
+}
+.container .card .content a{
+    position: relative;
+    color:black;
+    background: white;
+    display: inline-block;
+    padding:10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: 700;
+}
