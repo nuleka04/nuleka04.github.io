@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_music.css">
+</head>
+<body>
+    <div class="box-container">
+        <div class="box">
+            <img src="images_audio/wakanda.jpg" class="cover">
+            <h2>Black Panther: Wakanda Forever (2022) <br> Official Playlist</h2>
+            <p>354 895 likes, 5 soundtracks, 21 minutes</p>
+        </div>
+    
+        <audio src="images_audio/Alone.mp3" id = "mySong"></audio>
+        <audio src="images_audio/Immigrant_Song.mp3" id = "mySong"></audio>
+    
+        <div class="playlist">
+        <div class = "music-player">
+            <h1 class = "music_name">Song name</h1>
+            <p class = "artist_name"> Artist name</p>
+    
+            <div class="song-slider">
+                <input type="range" value = "0" class = "seek-bar">
+                <span class = "current-time">00:00</span>
+                <span class = "song-duration">00:00</span>
+            </div>
+    
+            <div class="controls">
+                <button class = "play-btn"><img src="images_audio/play.png" alt="" style="width:40px; margin-top: 2px;" onclick="play('images_audio/Alone.mp3')" ondblclick="pause('images_audio/Alone.mp3')"></button>
+            </div>
+    
+        </div>
+
+        <div class = "music-player">
+            <h1 class = "music_name">Song name</h1>
+            <p class = "artist_name"> Artist name</p>
+    
+            <div class="song-slider">
+                <input type="range" value = "0" class = "seek-bar">
+                <span class = "current-time">00:00</span>
+                <span class = "song-duration">00:00</span>
+            </div>
+    
+            <div class="controls">
+                <button class = "play-btn"><img src="images_audio/play.png" alt="" style="width:40px; margin-top: 2px;" onclick="StartOrStop('images_audio/Immigrant-Song.mp3')" ondblclick="StartOrStop('images_audio/Alone.mp3')"></button>
+            </div>
+    
+        </div>
+    </div>
+    
+    </div>
+    <script src="music.js"></script>
+</body>
+</html>
