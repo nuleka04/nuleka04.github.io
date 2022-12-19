@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #131313f8;
+}
+.navbar{
+  margin-bottom: -500px;
+}
+.navbar #logo{
+    margin-left: 125px;
+    position: absolute;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    line-height: 52px;
+    color: #ff1717;
+    transition: 0.3s;
+}
+.navbar #logo:hover{
+    width: 120px;
+    border-color: #ff1717;
+    box-shadow: 0 0 20px #ff4040;
+}
+.navbar ul{
+    margin-left: 120px;
+    margin-top: 10px;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 50px;
+    padding: 15px;
+    position: relative;
+    margin-left: 40px;
+    font-size: 17px;
+    
+}
+.navbar ul li a{
+    color:white;
+    position: relative;
+}
+.navbar ul li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    margin-bottom: -5px;
+    background-color: white;
+    bottom: 0;
+    left: 15;
+    transform-origin: right;
+    transition: transform .2s ease-in-out;
+    transform: scaleX(0);
+    
+  }
+  .navbar ul li a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+  #video{
+    margin-top: -70px;
+    width:1600px;
+    height:100vh;
+  }
+  #mainphoto{
+    width:100%;
+    height:600px;
+    object-fit: cover;
+  }
+  #flying_spider{
+    margin-top: -600px;
+    width:1000px;
+    margin-left: 550px;
+  }
+  #back{
+    width:50px;
+    margin-top: 20px;
+    margin-left: 30px;
+    position: absolute;
+    cursor: pointer;
+  }
+  #back:hover{
+    box-shadow: red;
+  }
+.text{
+    margin-top: 150px;
+}
+.text p{
+  position: absolute;
+  color:white;
+  top: 350px;
+  left:80px;
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+
+}
+#logo-spider{
+  position: absolute;
+  margin-top: -950px;
+  width:450px;
+  margin-left: 100px;
+
+}
+#text-news{ 
+  color:white;
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 50px;
+  margin-left: 80px;
+  margin-bottom: 20px;
+  background-color:rgb(213, 19, 19);
+  width: 250px;
+  text-align: center;
+  height: 40px;
+  transition: color .3s , box-shadow .3s;
+}
+#text-news:hover {
+  box-shadow: inset 250px 0 0 0 white;
+  color:rgb(54, 54, 54);
+}
+.related-films #movies{
+  display: flex;
+  justify-content: space-around;
+}
+.related-films #movies img{
+  width:300px;
+}
+.related-films #text-of-movies{
+  display: flex;
+  justify-content: space-around;
+  color:white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  left:-20px;
+}
+.trailer{
+  margin-top: 50px;
+}
+iframe{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  margin-left: 550px;
+  margin-top: -510px;
+}
+.trailer #home{
+  width:300px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.trailer p{
+  color:white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 70px;
+  margin-top: 10px;
+}
+.links{
+  position: relative;
+}
+.links::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  margin-bottom: -5px;
+  background-color: rgb(185, 16, 16);
+  bottom: 0;
+  left: 15;
+  transform-origin: right;
+  transition: transform .2s ease-in-out;
+  transform: scaleX(0);
+  
+}
+.links:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.navbar2 .ul1{
+  margin-top: 178px;
+  width: 100%;
+}
+.navbar2 .ul1 li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 100px;
+  justify-content: space-around;
+  padding: 15px;
+  position: relative;
+  font-size: 17px;
+  
+}
+.navbar2 .ul1 li a{
+  color:white;
+  position: relative;
+  font-weight: bold;
+}
+.ul2 img{
+  width:30px;
+  cursor: pointer;
+}
+.navbar2 .ul2 li{
+  display: inline-block;
+  margin: 0 30px;
+}
+.navbar2 .ul2{
+  margin-left: 1200px;
+  margin-top: -30px;
+}

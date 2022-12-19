@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_audio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html"><img id = "logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/2560px-Marvel_Logo.svg.png" alt="" style="Width:100px"></a>
+    <ul>
+        <li><a href="movie.html" >Movies</a></li>
+        <li><a href="#soundtracks">Soundtracks</a></li>
+        <li><a href="#games">Games</a></li>
+        <li><a href="characters.html">Characters</a></li>
+    </ul>
+    <div class="mainph">
+        <img src="images_audio/mainphoto3.png" alt ="" style = "width:1600px; height: 600px; object-fit: cover;">
+        <hr style="height:20px; background:white; margin-top: -5px;">
+
+        <div class="search">
+            <input type="search" placeholder="Search..." class = "input" onmouseout="this.value = ''; this.blur();">
+            <img src="images_home/search.png" alt="">
+        </div>
+
+        <div class="text">
+            <h1>songs recognizable <br> by the most true fans</h1>
+                <i id = "i1">let's listen together!</i>
+                </div>
+
+                <div class="play">
+                    <img src="images_audio/play.png" id="icon" onclick="play()" ondblclick="pause()">
+                    <p>Click to Play</p>
+                </div>
+                
+
+                <audio id="mysong">
+                    <source src = "images_audio/Immigrant_Song.mp3" type="audio/mp3">
+                </audio>
+    </div>
+    </div>
+
+    <div class="grid">
+    <div class="box-container">
+        <div class="box">
+            <img src="images_audio/wakanda.jpg" class="cover">
+            <h2>Black Panther: Wakanda Forever (2022) <br> Official Playlist</h2>
+            <p>354 895 likes, 5 soundtracks, 21 minutes</p>
+        </div>
+        <a href="https://open.spotify.com/playlist/37i9dQZF1DX6tq7CPNyNEM?si=3e567d806b0d4919"><img id="button" src="images_audio/icon.png" alt=""></a>
+        <div id = "spotify">
+            <p>Sponsored by Spotify</p>
+            <img src="images_audio/spotify.png" alt="">
+        </div>
+        </div>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="images_audio/ragnarok.jpg" class="cover">
+            <h2>Thor: Ragnarok (2017) <br> Official Playlist</h2>
+            <p>296 127 likes, 5 soundtracks, 20 minutes</p>
+        </div>
+        <a href="https://open.spotify.com/playlist/6Yep9CoC5RwA0lW5DqLQun?si=adda00fe758b4f53"><img id="button" src="images_audio/icon.png" alt=""></a>
+    </div>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="images_audio/shang.jpg" class="cover">
+            <h2>Shang-Chi and the <br> Legend of the Ten Rings <br> Official Playlist</h2>
+            <p>198 122 likes, 5 soundtracks, 24 minutes</p>
+        </div>
+        <a href="https://open.spotify.com/album/2kAqjStKcwlDD59H0llhGC?si=yEO96zg1QO2h2kuUM1jaZw"><img id="button" src="images_audio/icon.png" alt=""></a>
+    </div>
+    <div class="box-container">
+        <div class="box">
+            <img src="images_audio/spider.jpg" class="cover">
+            <h2>Spider-Man: Into <br> the the Spider-Verse <br> Official Playlist</h2>
+            <p>198 122 likes, 5 soundtracks, 24 minutes</p>
+        </div>
+        <a href="https://open.spotify.com/album/35s58BRTGAEWztPo9WqCIs?si=yTKBmreNRPS9AU9BQ-7dHg"><img id="button" src="images_audio/icon.png" alt=""></a>
+    </div>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="images_audio/galaxy.jpg" class="cover">
+            <h2>Guardians of the Galaxy vol.2 <br> Official Playlist</h2>
+            <p>296 127 likes, 5 soundtracks, 20 minutes</p>
+        </div>
+        <a href="https://open.spotify.com/playlist/1IaaDKR0912vGUrrRxtTV9?si=34d63b2b37fa4189"><img id="button" src="images_audio/icon.png" alt=""></a>
+    </div>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="images_audio/orin.jpg" class="cover">
+            <h2>Iron Man <br> Official Playlist</h2>
+            <p>198 122 likes, 5 soundtracks, 24 minutes</p>
+        </div>
+        <a href="https://open.spotify.com/playlist/1SKGqz9TmShsQpfFUsRKpY?si=4345659303bc48b9"><img id="button" src="images_audio/icon.png" alt=""></a>
+    </div>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="images_audio/end.jpg" class="cover">
+            <h2>Avengers: end game (2022) <br> Official Playlist</h2>
+            <p>354 895 likes, 5 soundtracks, 21 minutes</p>
+        </div>
+        <a href="https://open.spotify.com/album/5zHDLyPZynJKdsXdP1f8Ez?si=g29FDBV9S2KQwfkWdlNTRw"><img id="button" src="images_audio/icon.png" alt=""></a>
+        </div>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="images_audio/she.jpg" class="cover">
+            <h2>She-Hulk: Attorney at Law <br> Official Playlist</h2>
+            <p>198 122 likes, 5 soundtracks, 24 minutes</p>
+        </div>
+        <a href="https://open.spotify.com/album/5JEi65NMKgJYr0To6e2Qq9?si=CJzmJVgeQIeV5LEQ961aeQ"><img id="button" src="images_audio/icon.png" alt=""></a>
+    </div>
+</div>
