@@ -91,7 +91,7 @@ html{
     transform: scaleX(1);
   }
   .search{
-    margin-top: -610px;
+    margin-top: -625px;
     margin-left: 1200px;
   }
   .search{
@@ -137,7 +137,8 @@ html{
     color:white;
     margin-left: 150px;
     margin-top: 50px;
-    font-family: 'Puritan', sans-serif;
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
 }
 
 .text h1{
@@ -152,7 +153,6 @@ html{
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 20px;
-    box-shadow: white;
 }
 /* .text #i2{
     position:absolute;
@@ -311,4 +311,9 @@ html{
     cursor:pointer;
     filter:invert(1);
     max-width: 32px;
+}
+.line{
+    height:10px;
+    background-color: white;
+    position: absolute;
 }

@@ -6,40 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <title>Marvel</title>
 </head>
-<body onload="load()">
+<body>
     <div class="main">
         <!-- Main Page -->
         <div class="header">
             <div class="navbar">
-                <img id = "logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/2560px-Marvel_Logo.svg.png" alt="" style="Width:100px">
+                <a href="index.html"><img id = "logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/2560px-Marvel_Logo.svg.png" alt="" style="Width:100px"></a>
             <ul>
-                <li><a href="#movies" >Movies</a></li>
+                <li><a href="movie.html" >Movies</a></li>
                 <li><a href="#soundtracks">Soundtracks</a></li>
                 <li><a href="#games">Games</a></li>
-                <li><a href="#characters">Characters</a></li>
+                <li><a href="characters.html">Characters</a></li>
                 <li><a href="#merch">Merch</a></li>
             </ul>
             <div class="mainph">
                 <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/avengersendgame_lob_mas_dsk_01.jpg" alt ="">
+                <hr style="height:20px; background:white; margin-top: -5px;">
                 <div class="search">
                     <input type="search" placeholder="Search..." class = "input" onmouseout="this.value = ''; this.blur();">
-                    <img src="search.png" alt="">
+                    <img src="images_home/search.png" alt="">
                 </div>
 
                 <div class="text">
                     <h1>Welcome ● <br> The biggest fan base <br>
                         in the world <br></h1>
                         <i id = "i1">be part of a great story</i>
-                        <i id = "i2">be part of a great story</i>
                         </div>
             </div>
             </div>
         </div>
-        
+        <hr>
         <!-- News Block -->
         <div class="news">
             <div class="navbar2">
@@ -48,12 +51,12 @@
                     <li><a class = "links" href="#films">Latest Films</a></li>
                 </ul>
                 <ul class = "ul2">
-                    <li><img src="facebook.png" alt=""></li>
-                    <li><img src="instagram.png" alt=""></li>
-                    <li><img src="twitter.png" alt=""></li>
+                    <li><img src="images_home/facebook.png" alt=""></li>
+                    <li><img src="images_home/instagram.png" alt=""></li>
+                    <li><img src="images_home/twitter.png" alt=""></li>
                 </ul>
             </div>
-
+            <div class="container">
             <div class="latest-news" id="news">
                 <div class="text-news">
                     <p>Latest news</p>
@@ -87,15 +90,15 @@
             </div>
             <!-- Billboard starts -->
             <div class = "billboard">
-                <img src="wakanda.png" alt="" style="width:100%; height: 500px; object-fit:cover; margin-top:50px;">
+                <img src="images_home/wakanda.png" alt="" style="width:100%; height: 500px; object-fit:cover; margin-top:50px;">
             </div>
                 <!-- <a class="play" onclick="toggle();"><img src="play.png"> Watch Trailer </a> -->
 
 
-                <div class = "trailer">
-                    <video src="trailer.mp4" controls="true" autoplay = "true"></video>
-                    <img src="close.png" onclick="toggleVideo();" class="close" alt="" onclick="toggleVideo();">
-                </div>
+                <!-- <div class = "trailer">
+                    <video src="images_home/trailer.mp4" controls="true" autoplay = "true"></video>
+                    <img src="images_home/close.png" onclick="toggleVideo();" class="close" alt="" onclick="toggleVideo();">
+                </div> -->
             <!-- Billboard ends -->
 
             <!-- Recent Movies -->
@@ -133,7 +136,7 @@
 
 
         </div>
-
+    </div>
     </div>
     <script src="script.js"></script>
     <script src="path/to/vanilla.js"></script>
