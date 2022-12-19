@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
 *{
     font-family: 'Poppins', sans-serif;
     margin:0; padding:0;
@@ -147,9 +148,12 @@ html{
     height:300px;
     margin:20px;
     display: flex;
+    margin-bottom: -50px;
     justify-content: flex-start;
     align-items: center;
-    background: #000000;
+    border-radius: 16px;
+    background-image: url(images_characters/back.jpg);
+    /* background: #000000;
     background: rgba(104, 104, 104, 0.47);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -157,11 +161,10 @@ html{
     -webkit-backdrop-filter: blur(8.8px);
     border: 1px solid rgba(107, 107, 107, 0.47);
     background: rgba(45, 45, 45, 0.47);
-    border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(8.8px);
     -webkit-backdrop-filter: blur(8.8px);
-    border: 1px solid rgba(63, 63, 63, 0.47);
+    border: 1px solid rgba(63, 63, 63, 0.47); */
 
 }
 .container .card:hover{
@@ -169,7 +172,7 @@ html{
     0 0 50px rgb(199, 26, 26),
     0 0 71px rgb(199, 26, 26);
 }
-.container .card img{
+.container .card #character{
     position:absolute;
     bottom:0;
     height:270px;
@@ -177,7 +180,7 @@ html{
     transform: translateX(-50%);
     transition: 0.5s;
 }
-.container .card:hover img{
+.container .card:hover #character{
     left:80%;
     height:320px;
 }
@@ -206,6 +209,7 @@ html{
 }
 .container .card .content p{
     color:white;
+    font-family: 'Arimo', sans-serif;
 }
 /* .container .card .content a{
     position: relative;
@@ -264,4 +268,3 @@ html{
     opacity: 1;
     animation: animate 8s linear infinite;
   }
-  
