@@ -317,3 +317,13 @@ html{
     background-color: white;
     position: absolute;
 }
+
+@media  screen and (max-width: 768px){
+    .navbar ul{
+        width: 800px;
+    }
+    hr{
+        width: 200%;
+    }
+    
+}

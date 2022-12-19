@@ -365,6 +365,77 @@ footer .logo{
     font-size: 2rem;
     font-weight: 400;
 }
+
+
+/* footer */
+#contact{
+    padding: 70px 17%;
+}
+.main2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer2{
+    padding: 10px 0;
+}
+
+.col{
+    width: 25%;
+}
+.col h4{
+    font-size: 1.2 rem;
+    color: #fff;
+    margin-bottom: 25px;
+    position: relative;
+}
+.col h4::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    left: 0;
+    bottom: -8px;
+    background: #000;
+}
+.col ul li:not(last-child){
+    margin-bottom: 15px;
+}
+.col ul li a{
+    color: #9897a9;
+    font-size: 1.1rem;
+    display: block;
+    text-transform: capitalize;
+    transition: .4s;
+}
+.col ul li a:hover{
+    color: #fff;
+    transform: translateX(-12px);
+}
+.col .social{
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.col .social a{
+    height: 40px;
+    width: 40px;
+    background: #000;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    transition: .4s;
+}
+.col .social a:hover{
+    transform: scale(1.2);
+    color: rgb(221, 0, 0);
+    background: #fff;
+}
+
+
 /* adaptation */
 @media(max-width:1200px){
     #main-slider,
@@ -380,6 +451,19 @@ footer .logo{
         flex-direction: column;
     }
 }
+
+@media (max-width: 1140px) {
+    #contact{
+        padding: 50px 8%;
+    }
+    .col{
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+}
+
+
 @media(max-width:1100px){
     .post-container{
         grid-template-columns: 1fr 1fr 1fr;
@@ -402,6 +486,20 @@ footer .logo{
         text-align: center;
     }
 }
+
+
+@media (max-width: 720px){
+    #contact{
+        padding: 100px 7%;
+    }
+}
+@media (max-width: 575px){
+    .col{
+        width: 100%;
+    }
+}
+
+
 @media(max-width:530px){
     .navigation{
         display: grid;
