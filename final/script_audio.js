@@ -11,6 +11,8 @@ function play() {
     icon.src = "images_audio/play.png";
 
   }
-  function load(){
-    $(".text").css({"bottom":"0px", opacity:'0'}).animate({"bottom":"100px", opacity:'1'}, "slow");
+
+
+function load(){
+    $(".text").css({"bottom":"100px", opacity:'0'}).animate({"bottom":"0px", opacity:'1'}, "slow");
 }
