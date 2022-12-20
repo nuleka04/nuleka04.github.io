@@ -9,11 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style_spider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
-<body>
-    
-</body>
-</html>
+<body onload="load()">
 <div class="header">
     <div class="navbar">
         <a href="index.html"><img id = "logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/2560px-Marvel_Logo.svg.png" alt="" style="Width:100px"></a>
@@ -33,12 +31,12 @@
     <div class="navbar2">
         <ul class = "ul1">
             <li><a class = "links" href="#movies" class="active">Related Movies</a></li>
-            <li><a class = "links" href="#films">Trailer of the Film</a></li>
+            <li><a class = "links" href="#home">Trailer of the Film</a></li>
         </ul>
         <ul class = "ul2">
-            <li><img src="images_home/facebook.png" alt=""></li>
-            <li><img src="images_home/instagram.png" alt=""></li>
-            <li><img src="images_home/twitter.png" alt=""></li>
+            <a href="https://www.facebook.com/Marvel/"><li><img src="images_home/facebook.png" alt=""></li></a>
+            <a href="https://www.instagram.com/marvel/"><li><img src="images_home/instagram.png" alt=""></li></a>
+            <a href="https://twitter.com/Marvel?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><li><img src="images_home/twitter.png" alt=""></li></a>
         </ul>
     </div>
     <div class="related-films">
@@ -59,14 +57,14 @@
     <div class="trailer">
         <p id="text-news">Watch Now</p>
         <img id="home" src="images_spider/home.jpg" alt="">
-        <p>Spider Man: No Way Home</p>
+        <p class = "watch">Spider Man: No Way Home</p>
         <iframe width="800px" height="500px"
             src="https://www.youtube.com/embed/ZYzbalQ6Lg8">
         </iframe>
     </div>
 </div>
 
-
+<script src = "script_spider.js"></script>
 
 
 </body>
