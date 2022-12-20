@@ -1,5 +1,5 @@
 function load(){
-    $(".text").css({"bottom":"0px", opacity:'0'}).animate({"bottom":"100px", opacity:'1'}, "slow");
+    $(".text").css({"bottom":"100px", opacity:'0'}).animate({"bottom":"0px", opacity:'1'}, "slow");
 }
 function toggle(){
     var trailer = document.querySelector(".trailer")

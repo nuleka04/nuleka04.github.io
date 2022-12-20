@@ -112,6 +112,7 @@ html{
 }
 .text{
     margin-top: 150px;
+    position: relative;
 }
 .text p, h1{
     color:white;
