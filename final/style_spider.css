@@ -257,3 +257,69 @@ iframe{
   margin-top: 20px;
   margin-left: 50px;
 }
+@media  screen and (max-width: 768px){
+  .navbar ul{
+      width: 800px;
+  }
+  #logo{
+      width:50px;
+  }
+  .navbar ul li a{
+      font-size: 15px;
+      margin-top: 20px;
+  }
+  .navbar ul li{
+      margin: 0 10px;
+      margin-top: 0px;
+  }
+  .text h1{
+      font-size: 25px;
+      position: absolute;
+      margin-top: 250px;
+      margin-left: 40px;
+  }
+  .text i{
+      font-size: 10px;
+      position: absolute;
+      margin-top: 370px;
+      margin-left: 40px;
+  }
+  .search input{
+      width:50px;
+      margin-top: -50px;
+  }
+  hr{
+      width:100%;
+  }
+   #mainphoto{
+      width: 100%;
+      height:300px;
+  }
+  #logo-spider{
+    margin-top: -450px;
+    width: 300px;
+  }
+  .navbar #flying_spider{
+    width:400px;
+    margin-left: 400px;
+    margin-top: -300px;
+  }
+  .navbar2 ul li a{
+    margin-top: 100px;
+  }
+  .info{
+    position: absolute;
+  }
+  .text{
+      font-size: 50px;
+  }
+  .big-container{
+      margin-top: 300px;
+  }
+  .container{
+      flex-wrap: wrap;
+  }
+  .container .card{
+      margin-top: 150px;
+  }
+}
